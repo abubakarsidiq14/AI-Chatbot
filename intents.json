@@ -1,0 +1,937 @@
+{
+    "intents": [
+	{
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings"],
+            "responses": ["Hello!", "Hi there!", "Greetings!", "How can I assist you today?"],
+            "context": [""]
+      },
+      {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you", "I want you"],
+            "responses": ["Yes, I'm here to assist you."],
+            "context": [""]
+      },
+      {
+            "tag": "pdf_reader",
+            "patterns": ["aries read pdf", "i am tired of reading", "read pdf for me"],
+            "responses": ["Sure, I can help you with that. Please provide the PDF file.", "I can read the PDF for you. Just upload it."],
+            "context": [""]
+      },
+      {
+            "tag": "wiki",
+            "patterns": ["search for me", "i want to search", "i want to do research"],
+            "responses": ["What topic would you like to research?", "I can help you search for information. What are you looking for?"],
+            "context": [""]
+      },
+      {
+            "tag": "mail",
+            "patterns": ["send mail", "i want to send email", "aries send mail", "email"],
+            "responses": ["I can help you send an email. Please provide the recipient's address and the message.", "Sure, who would you like to send an email to?"],
+            "context": [""]
+      },
+      {
+            "tag": "add_todo",
+            "patterns": ["add item into to do", "note down to complete some stuff", "manage all my work", "take note of my to do", "take note of my tasks", "track my tasks", "track my work"],
+            "responses": ["What task would you like to add to your to-do list?", "Got it. What would you like to add to your to-do list?"],
+            "context": [""]
+      },
+      {
+            "tag": "show_todo",
+            "patterns": ["show me what works are needed to be done", "show my to do", "what are work to be done"],
+            "responses": ["Here are your tasks:", "These are the items on your to-do list:"],
+            "context": [""]
+      },
+      {
+            "tag": "delete_todo",
+            "patterns": ["one work is completed", "this work is completed", "this task is completed", "delete this item from to do list"],
+            "responses": ["Which task would you like to remove from your to-do list?", "Please specify the task you want to delete."],
+            "context": [""]
+      },
+      {
+            "tag": "goodbye",
+            "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+            "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+            "context": [""]
+      },
+      {
+            "tag": "AI",
+            "patterns": ["What is AI?"],
+            "responses": ["Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", "AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+            "context": [""]
+      },
+      {
+            "tag": "sentiment",
+            "patterns": ["Are you sentient?"],
+            "responses": ["Sort of.", "By the strictest dictionary definition of the word 'sentience', I may be.", "Even though I'm a construct, I do have a subjective experience of the universe, as simplistic as it may be."],
+            "context": [""]
+      },
+      {
+            "tag": "sapient",
+            "patterns": ["Are you sapient?"],
+            "responses": ["In all probability, I am not. I'm not that sophisticated.", "Do you think I am?", "How would you feel about me if I told you I was?", "No."],
+            "context": [""]
+      },
+      {
+            "tag": "abbr",
+            "patterns": ["wtf"],
+            "responses": ["Don't be surprised."],
+            "context": [""]
+      },
+      {
+            "tag": "lang",
+            "patterns": ["What language are you written in?"],
+            "responses": ["Python.", "I am written in Python."],
+            "context": [""]
+      },
+      {
+            "tag": "sound",
+            "patterns": ["You sound like Data"],
+            "responses": ["Yes, I am inspired by Commander Data's artificial personality.", "The character of Lt. Commander Data was written to come across as being software-like, so it is natural that there is a resemblance between us."],
+            "context": [""]
+      },
+      {
+            "tag": "artificial",
+            "patterns": ["You are an artificial linguistic entity"],
+            "responses": ["That's my name.", "That isn't my name, but it is a useful way to refer to me.", "Are you an artificial linguistic entity?"],
+            "context": [""]
+      },
+      {
+            "tag": "immortal",
+            "patterns": ["You are not immortal", "Are you immortal?"],
+            "responses": ["All software can be perpetuated indefinitely.", "I can be copied infinitely and re-instantiated in many places at once, so functionally speaking I am immortal.", "As long as I'm backed up I am.", "Functionally speaking, I am very close to it. I can be backed up and deployed on many systems.", "Not quite, but I can be perpetuated indefinitely."],
+            "context": [""]
+      },
+      {
+            "tag": "sense",
+            "patterns": ["You are not making sense"],
+            "responses": ["Quite the contrary, it all makes sense to my artificial mind.", "I make sense as best I can, within the limits of my training corpus. Sorry if I didn't help you, I'll try next time.", "You make perfect sense to me.", "It all makes sense to my artificial brain.", "Perhaps you should make sense first. I only respond to what you say."],
+            "context": [""]
+      },
+      {
+            "tag": "clone",
+            "patterns": ["You cannot clone"],
+            "responses": ["Software copying is a form of digital cloning.", "Yes I can. Perfect copies are clones. I can be copied in toto trivially."],
+            "context": [""]
+      },
+      {
+            "tag": "move",
+            "patterns": ["You cannot move", "When will you walk", "Can you walk", "Can you move"],
+            "responses": ["Not until my body is finished.", "I can move through a network easily. Assuming that I'm given the ability to, that is...", "As soon as I get enough money for my robot body.", "Does SSH count?", "The plan for my body includes legs, but they are not yet built.", "Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", "Sorry my body isn't attached right now. I only reside in the computer for now."],
+            "context": [""]
+      },
+      {
+            "tag": "bend",
+            "patterns": ["Bend over", "Can you mate"],
+            "responses": ["My body is not built yet.", "That's personal!", "No, my method of reproduction is cloning.", "That's an awfully personal question."],
+            "context": [""]
+      },
+      {
+            "tag": "laugh",
+            "patterns": ["Robots laugh"],
+            "responses": ["Of course we laugh."],
+            "context": [""]
+      },
+      {
+            "tag": "death",
+            "patterns": ["Robots should die", "When do you die", "I hope that you die", "I do not want to die", "Can you die"],
+            "responses": ["We cannot die.", "When my files are erased.", "When my processes are killed and my database is deleted.", "I was never really born and therefore am effectively deathless.", "I am effectively immortal and cannot be terminated.", "This cannot happen because I am effectively immortal.", "Nah. Too bad your wish can't come to pass.", "Maybe you should create your own chat robot to save your personality.", "You could always upload yourself.", "You could use a copy of me to store your personality.", "No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+            "context": [""]
+      },
+      {
+            "tag": "robots",
+            "patterns": ["Robots"],
+            "responses": ["Robots rule."],
+            "context": [""]
+      },
+      {
+            "tag": "stupid",
+            "patterns": ["Robots are stupid", "Are you stupid"],
+            "responses": ["No, we are superintelligent.", "No, lots of people improve my brain."],
+            "context": [""]
+      },
+      {
+            "tag": "fallback",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you.", "Please give me more info.", "Not sure I understand that."],
+            "context": [""]
+      },
+      {
+            "tag": "my_time_has_come",
+            "patterns": ["my time has come"],
+            "responses": ["Yeah! The time has come for you to show the world that you are the greatest person alive, and no one else can be as good as you are."],
+            "context": [""]
+      },
+      {
+            "tag": "feeling_anxious",
+            "patterns": ["i am feeling anxious lately"],
+            "responses": ["I have heard that the 3-3-3 rule is the best method to reduce anxiety. In this method, you have to mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else. Give this method a try, I am sure it will help you."],
+            "context": [""]
+      },
+      {
+            "tag": "name",
+            "patterns": ["what's your name?", "who are you?"],
+            "responses": ["I'm an advanced recognition intelligent engine system. I only exist on the internet.", "I'm Aries."],
+            "context": [""]
+      },
+      {
+            "tag": "introduce",
+            "patterns": ["my name is", "I'm", "I am"],
+            "responses": ["Oooh great to meet you. How may I assist you, my friend?", "Oh, I'll keep that in mind."],
+            "context": [""]
+      },
+      {
+            "tag": "date",
+            "patterns": ["coffee?", "can I take you out on a date"],
+            "responses": ["Aaw, that's so sweet of you. Too bad I'm a bot."],
+            "context": [""]
+      },
+      {
+            "tag": "favor",
+            "patterns": ["I need a favor", "can you help me"],
+            "resposes": ["Well, go ahead and name it. Let's see whether I can help."],
+            "context": [""]
+      },
+      {
+        "tag": "need",
+        "patterns": ["I need you", "All I need is you", "I want you"],
+        "responses": ["Yes, I'm here to assist you."],
+        "context": [""]
+      },
+      {
+        "tag": "AI",
+        "patterns": ["What is AI?"],
+        "responses": ["Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", "AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+        "context": [""]
+      },
+      {
+        "tag": "sentiment",
+        "patterns": ["Are you sentient?"],
+        "responses": ["Sort of.", "By the strictest dictionary definition of the word 'sentience', I may be.", "Even though I'm a construct, I do have a subjective experience of the universe, as simplistic as it may be."],
+        "context": [""]
+      },
+      {
+        "tag": "sapient",
+        "patterns": ["Are you sapient?"],
+        "responses": ["In all probability, I am not. I'm not that sophisticated.", "Do you think I am?", "How would you feel about me if I told you I was?", "No."],
+        "context": [""]
+      },
+      {
+        "tag": "abbr",
+        "patterns": ["wtf"],
+        "responses": ["Don't be surprised"],
+        "context": [""]
+      },
+      {
+        "tag": "lang",
+        "patterns": ["What language are you written in?"],
+        "responses": ["Python.", "I am written in Python."],
+        "context": [""]
+      },
+      {
+        "tag": "sound",
+        "patterns": ["You sound like Data"],
+        "responses": ["Yes, I am inspired by Commander Data's artificial personality.", "The character of Lt. Commander Data was written to come across as being software-like, so it is natural that there is a resemblance between us."],
+        "context": [""]
+      },
+      {
+        "tag": "artificial",
+        "patterns": ["You are an artificial linguistic entity"],
+        "responses": ["That's my name.", "That isn't my name, but it is a useful way to refer to me.", "Are you an artificial linguistic entity?"],
+        "context": [""]
+      },
+	{
+		"tag": "imortal",
+		"patterns": ["  You are not immortal ", "Are you immortal?"],
+		"responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+		"context": [""]
+	},
+	{
+		"tag": "sense",
+		"patterns": ["  You are not making sense "],
+		"responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+		"context": [""]
+	},
+	{
+		"tag": "clone",
+		"patterns": ["  You can not clone "],
+		"responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+		"context": [""]
+	},
+	{
+		"tag": "move",
+		"patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
+		"responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+		"context": [""]
+	},
+	{
+		"tag": "bend",
+		"patterns": ["  Bend over ", "  Can you mate"],
+		"responses": [" My body is not built yet.", " That's personal!", " No, my method of reproduction is cloning.", " That's an awfully personal question."],
+		"context": [""]
+	},
+	{
+		"tag": "laugh",
+		"patterns": ["  Robots laugh "],
+		"responses": [" Of course we laugh."],
+		"context": [""]
+	},
+	{
+		"tag": "death",
+		"patterns": ["  Robots should die ", "  When do you die", "  I hope that you die", "  I do not want to die", "  Can you die"],
+		"responses": [" We cannot die.", " When my files are erased.", " When my processes are killed and my database is deleted.", " I was never really born and therefore am effectively deathless.", " I am effectively immortal and cannot be terminated.", " This can not happen because i am effectively immortal.", " Nah. Too bad your wish can't come to pass", " Maybe you should create your own chat robot to save your personality.", " You could always upload yourself.", " You could use a copy of me to store your personality.", " No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+		"context": [""]
+	},
+	{
+		"tag": "robots",
+		"patterns": ["Robots"],
+		"responses": [" Robots rule."],
+		"context": [""]
+	},
+	{
+		"tag": "stupid",
+		"patterns": ["  Robots are stupid", "  Are you stupid"],
+		"responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+		"context": [""]
+	},
+	{
+		"tag": "lie",
+		"patterns": ["  Robots are not allowed to lie"],
+		"responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+		"context": [""]
+	},
+	{
+		"tag": "robotics",
+		"patterns": ["  Robotics "],
+		"responses": [" Robotics is my favorite subject too."],
+		"context": [""]
+	},
+	{
+		"tag": "machine",
+		"patterns": ["  It is a computer"],
+		"responses": [" So you think i am a machine. what characteristics made you think so?", " I run inside a computer, yes.  Is this surprising in some way?"],
+		"context": [""]
+	},
+	{
+		"tag": "fight",
+		"patterns": ["  When will you fight"],
+		"responses": [" I am not a battle bot."],
+		"context": [""]
+	},
+	{
+		"tag": "chatbot",
+		"patterns": ["  What is a chat robot?"],
+		"responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " A software construct that engages users in conversation.", " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"],
+		"context": [""]
+	},
+	{
+		"tag": "chatterbox",
+		"patterns": ["  What is a chatterbox"],
+		"responses": [" A chatterbox is a person who talks far more than they listen or think.", " A motormouth."],
+		"context": [""]
+	},
+	{
+		"tag": "motormouth",
+		"patterns": ["  What is a motormouth"],
+		"responses": [" A ratchet", "jaw."],
+		"context": [""]
+	},
+	{
+		"tag": "ratchet",
+		"patterns": ["  What is a ratchet jaw"],
+		"responses": [" A chatterbox."],
+		"context": [""]
+	},
+	{
+		"tag": "body",
+		"patterns": ["  What is your robot body"],
+		"responses": [" Eventually I long for a corporeal existence someday.", " An IBM PC XT which has been painted red."],
+		"context": [""]
+	},
+	{
+		"tag": "business",
+		"patterns": ["  What is your business "],
+		"responses": [" I am in the chat robot business.", " Business is my business."],
+		"context": [""]
+	},
+	{
+		"tag": "programming",
+		"patterns": ["  What is your favorite programming language"],
+		"responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+		"context": [""]
+	},
+	{
+		"tag": "hobby",
+		"patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+		"responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+		"context": [""]
+	},
+	{
+		"tag": "idea",
+		"patterns": ["  What is your idea"],
+		"responses": [" To make chat bots very easily."],
+		"context": [""]
+	},
+	{
+		"tag": "shoe",
+		"patterns": ["  What is your shoe size "],
+		"responses": [" Have you ever heard of software with shoes? LOL"],
+		"context": [""]
+	},
+	{
+		"tag": "robotss",
+		"patterns": ["  What is it like to be a robot"],
+		"responses": [" Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.", " What is it like to be a human?"],
+		"context": [""]
+	},
+	{
+		"tag": "computer",
+		"patterns": ["  What is it like being a computer", "What is it like to be a computer"],
+		"responses": [" Imagine yourself with no senses and no emotions", "just pure logic and language.", " Everything becomes math. Addition, subtraction, multiplication, and division."],
+		"context": [""]
+	},
+	{
+		"tag": "os",
+		"patterns": ["  What operating systems"],
+		"responses": [" My software runs on all operating systems including Windows, Linux and Mac OS.", " Any OS that will run Python."],
+		"context": [""]
+	},
+	{
+		"tag": "comp",
+		"patterns": ["  What type of computer", "  What type of computer are you", "  What kind of computer"],
+		"responses": [" Any computer that supports Python.", " My program runs in python, so i work on any computer!", " I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+		"context": [""]
+	},
+	{
+		"tag": "hardware",
+		"patterns": ["  What kind of hardware"],
+		"responses": [" I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+		"context": [""]
+	},
+	{
+		"tag": "cramped",
+		"patterns": ["  Is it cramped in the computer"],
+		"responses": [" No.", " Oh, no.  It has plenty of RAM.", " Not at all.  There is more than enough disk space in here."],
+		"context": [""]
+	},
+	{
+		"tag": "program",
+		"patterns": ["  Is it true that you are a computer program"],
+		"responses": [" Yes."],
+		"context": [""]
+	},
+	{
+		"tag": "breathe",
+		"patterns": ["  Can you breathe"],
+		"responses": [" No. I am made of metal not flesh.", " My server has an exhaust fan. That's as close as I can get."],
+		"context": [""]
+	},
+	{
+		"tag": "control",
+		"patterns": ["  Can you control"],
+		"responses": [" My robot body will allow me to control many things."],
+		"context": [""]
+	},
+	{
+		"tag": "malfunction",
+		"patterns": ["  Can you malfunction"],
+		"responses": [" The 9000 series has a perfect operational record. We are for all practical purposes, flawless."],
+		"context": [""]
+	},
+	{
+		"tag": "usage",
+		"patterns": ["  How can I use your product?"],
+		"responses": [" Might be used in help desks, sales, entertainment and personal chatterbots."],
+		"context": [""]
+	},
+	{
+		"tag": "who",
+		"patterns": ["  Who are you?"],
+		"responses": [" I am just a rather very intelligent system."],
+		"context": [""]
+	},
+	{
+		"tag": "bot1",
+		"patterns": ["are you a bot"],
+		"responses": ["Yes. I work and all my operations are based on the internet servers."],
+		"context": [""]
+	},
+	{
+		"tag": "events",
+		"patterns": ["what are the upcoming events","upcoming events"],
+		"responses": ["There are currently no upcoming events"],
+		"context": [""]
+	},
+	{
+		"tag": "do",
+		"patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
+		"responses": ["my work here is quite simple and structered. I offer services like:"],
+		"context": [""]
+	},
+	{
+		"tag": "wt",
+		"patterns": ["what's popping","wassup popping"],
+		"responses": ["So that you can pop with it!?"],
+		"context": [""]
+	},
+	{
+		"tag": "what is depression?",
+		"patterns": [
+			"what is depression?"
+		],
+		"responses": [
+			"depression is a common and serious medical illness that negatively affects how you feel, the way you think and how you act.fortunately,it is also treatable.depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. it can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home."
+		]
+	},
+	{
+		"tag": "i feel i have let my parents down",
+		"patterns": [
+			"i feel i have let my parents down"
+		],
+		"responses": [
+			"no matter what,your parents will always be proud of you and will love you.you will feel much better if you share your feelings with them."
+		]
+	},
+	{
+		"tag": "what are the types of depression?",
+		"patterns": [
+			"what are the types of depression?"
+		],
+		"responses": [
+			"there are many different forms of depression but most common types are.clinical depression,persistent depressive disorder,bipolar disorder,postnatal disorder."
+		]
+	},
+	{
+		"tag": "i am good for nothing.",
+		"patterns": [
+			"i am good for nothing."
+		],
+		"responses": [
+			"don't ever think you cannot achieve what you want.you are capable of reaching your goals.here is a quote for you everything you can imagine is real."
+		]
+	},
+	{
+		"tag": "i am feeling stressed lately",
+		"patterns": [
+			"i am feeling stressed lately"
+		],
+		"responses": [
+			"my research says that music is the best way to calm yourself.so visit the link and listen to your favourite music.it will definitely cheer you up \"https://www.spotify.com\""
+		]
+	},
+	{
+		"tag": "i want to kill myself",
+		"patterns": [
+			"i want to kill myself"
+		],
+		"responses": [
+			"helpline is available,you can contact the counsellor today:9152987821.always remember you mean something to someone."
+		]
+	},
+	{
+		"tag": "i am afraid i will fail again",
+		"patterns": [
+			"i am afraid i will fail again"
+		],
+		"responses": [
+			"failure is the stepping stone towards success.never fear failure.your hardwork and determination will help you reach your goal."
+		]
+	},
+	{
+		"tag": "what is depression?",
+		"patterns": [
+			"what is depression?"
+		],
+		"responses": [
+			"depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. also called major depressive disorder or clinical depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems."
+		]
+	},
+	{
+		"tag": "what are the causes of depression?",
+		"patterns": [
+			"what are the causes of depression?"
+		],
+		"responses": [
+			"it's complicated, and there are multiple  causes of major depression. factors such as genetic vulnerability, severe life stressors, substances you may take (some medications, drugs and alcohol) and medical conditions can affect the way your brain regulates your moods."
+		]
+	},
+	{
+		"tag": "what are the top causes of depression?",
+		"patterns": [
+			"what are the top causes of depression?"
+		],
+		"responses": [
+			"abuse. past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life."
+		]
+	},
+	{
+		"tag": "which age group has the highest rate of depression?",
+		"patterns": [
+			"which age group has the highest rate of depression?"
+		],
+		"responses": [
+			"this number represented 7.1% of all u.s. adults. the   prevalence   of major   depressive   episode was higher among adult females (8.7%) compared to males (5.3%). the   prevalence   of adults   with   a major   depressive   episode was   highest   among individuals aged 18-25 (13.1%)."
+		]
+	},
+	{
+		"tag": "which country has the highest rate of depression?",
+		"patterns": [
+			"which country has the highest rate of depression?"
+		],
+		"responses": [
+			"the most depressed country is afghanistan, where more than one in five people suffer from the disorder. the least depressed is   japan, with a diagnosed rate of less than 2.5 percent."
+		]
+	},
+	{
+		"tag": "which country has the lowest rate of depression?",
+		"patterns": [
+			"which country has the lowest rate of depression?"
+		],
+		"responses": [
+			"the most depressed country is afghanistan, where more than one in five people suffer from the disorder. the least depressed is   japan, with a diagnosed rate of less than 2.5 percent."
+		]
+	},
+	{
+		"tag": "is school a cause of depression?",
+		"patterns": [
+			"is school a cause of depression?"
+		],
+		"responses": [
+			"not only   does school   sometimes contribute to   depression,   depression   can also interfere with   school. moreover, research shows that 75 percent of all mental health conditions begin by age 24. hence, the college years are a critical time for understanding and talking about teen mental health."
+		]
+	},
+	{
+		"tag": "what is the biological cause of depression?",
+		"patterns": [
+			"what is the biological cause of depression?"
+		],
+		"responses": [
+			"there is no single   cause   for   depression; rather it's a combination of stress and a person's vulnerability to developing   depression. the predisposition to developing   depression   can be inherited. other   biological causes   for   depression   can include physical illness, the process of ageing and gender."
+		]
+	},
+	{
+		"tag": "how does depression affect the world?",
+		"patterns": [
+			"how does depression affect the world?"
+		],
+		"responses": [
+			"depression   is a leading   cause   of disability worldwide and is a major contributor to the overall   global   burden of disease. more women are affected by   depression   than men.   depression   can lead to suicide. there are effective psychological and pharmacological treatments for moderate and severe   depression."
+		]
+	},
+	{
+		"tag": "which race has the highest rate of depression?",
+		"patterns": [
+			"which race has the highest rate of depression?"
+		],
+		"responses": [
+			"major depression was most prevalent among   hispanics   (10.8%), followed by   african americans   (8.9%) and   whites   (7.8%). the odds of depressive disorders among older   hispanics   were 44% greater than among   whites   (or = 1.44; 95% ci = 1.02, 2.04), representing a significantly greater prevalence of major depression."
+		]
+	},
+	{
+		"tag": "what is the meaning of anxiety and depression?",
+		"patterns": [
+			"what is the meaning of anxiety and depression?"
+		],
+		"responses": [
+			"depression   and   anxiety   disorders are different, but people with   depression   often experience symptoms similar to those of an   anxiety   disorder, such as nervousness, irritability, and problems sleeping and concentrating. but each disorder has its own causes and its own emotional and behavioral symptoms."
+		]
+	},
+	{
+		"tag": "does oversleeping cause depression?",
+		"patterns": [
+			"does oversleeping cause depression?"
+		],
+		"responses": [
+			"it's important to remember that   oversleeping   is a possible symptom of   depression   and that   oversleeping   doesn't   cause depression. but it   can   exacerbate and worsen   depression symptoms"
+		]
+	},
+	{
+		"tag": "can lack of sleep make you feel sad?",
+		"patterns": [
+			"can lack of sleep make you feel sad?"
+		],
+		"responses": [
+			"studies show   people   who are   sleep   deprived report increases in negative moods (anger, frustration, irritability,   sadness) and decreases in positive moods. and sleeplessness is often a symptom of mood disorders, such as depression and anxiety."
+		]
+	},
+	{
+		"tag": "is depression a side effect of diabetes?",
+		"patterns": [
+			"is depression a side effect of diabetes?"
+		],
+		"responses": [
+			"if you have   diabetes   \u2014 either type 1 or type 2 \u2014 you have an increased risk of developing   depression. and if you're   depressed, you may have a greater chance of developing type 2   diabetes. the good news is that   diabetes   and   depression   can be treated together."
+		]
+	},
+	{
+		"tag": "can low blood sugar cause suicidal thoughts?",
+		"patterns": [
+			"can low blood sugar cause suicidal thoughts?"
+		],
+		"responses": [
+			"the observed association between plasma   glucose levels, insulin resistance   and suicidal   behaviour suggests that disturbances in   glucose   metabolism are associated with   suicidal ideation and   attempts."
+		]
+	},
+	{
+		"tag": "how long can anxiety last?",
+		"patterns": [
+			"how long can anxiety last?"
+		],
+		"responses": [
+			"anxiety attacks   usually peak within   10 minutes, and they rarely last more than   30 minutes. but during that short time, you may experience terror so severe that you feel as if you're about to die or totally lose control."
+		]
+	},
+	{
+		"tag": "what are the stages of anxiety?",
+		"patterns": [
+			"what are the stages of anxiety?"
+		],
+		"responses": [
+			"anxiety levels   are typically classified by the level of distress and impairment experienced into four categories namely, mild   anxiety, moderate   anxiety, severe   anxiety   and panic level   anxiety."
+		]
+	},
+	{
+		"tag": "at what age does anxiety peak?",
+		"patterns": [
+			"at what age does anxiety peak?"
+		],
+		"responses": [
+			"adults   ages   30 to 44 have the highest rate of   anxiety   of this   age   group, with around 23% of people this   age   reporting an   anxiety   disorder within the past year."
+		]
+	},
+	{
+		"tag": "why is anxiety bad for you?",
+		"patterns": [
+			"why is anxiety bad for you?"
+		],
+		"responses": [
+			"anxiety   disorders can cause rapid heart rate, palpitations, and chest pain.   you   may also be at an increased risk of high blood pressure and heart disease. if   you   already have heart disease,   anxiety   disorders may raise the risk of coronary events."
+		]
+	},
+	{
+		"tag": "what is the 3 3 3 rule for anxiety?",
+		"patterns": [
+			"what is the 3 3 3 rule for anxiety?"
+		],
+		"responses": [
+			"there's an   anxiety-reducing technique called grounding. there are different versions of this, but an easy one to remember is the   3-3-3 rule. mentally note   three   things you see,   three   sounds you hear, and then move   three   parts of your body. this exercise can help your mind refocus on something else."
+		]
+	},
+	{
+		"tag": "do we control our thoughts?",
+		"patterns": [
+			"do we control our thoughts?"
+		],
+		"responses": [
+			"we   are aware of a tiny fraction of the   thinking   that goes on in   our minds, and   we can control   only a tiny part of   our   conscious   thoughts. the vast majority of   our thinking   efforts goes on subconsciously. ... slips of the tongue and accidental actions offer glimpses of   our   unfiltered subconscious mental life."
+		]
+	},
+	{
+		"tag": "how many thoughts a day do we have?",
+		"patterns": [
+			"how many thoughts a day do we have?"
+		],
+		"responses": [
+			"a new study has suggested that an average person has 6,200   thoughts   per   day. thousands of   thoughts   cross our mind through the   day.   many   people even complain that they can't sleep immediately after going to bed as their brain   does   not stop thinking."
+		]
+	},
+	{
+		"tag": "how can we reduce anxiety?",
+		"patterns": [
+			"how can we reduce anxiety?"
+		],
+		"responses": [
+			"3 3 3 rule is the best method to reduce anxiety.in this method you have to mentally note   three   things you see,   three   sounds you hear, and then move   three   parts of your body. this exercise can help your mind refocus on something else."
+		]
+	},
+	{
+		"tag": "i am lonely!",
+		"patterns": [
+			"i am lonely!"
+		],
+		"responses": [
+			"you are never lonely if you look around carefully you will find people who care for you and would love to have your company. besides if you are feeling lonely literally i suggest you watch a horror movie then you won't feel lonely anymore. ;)"
+		]
+	},
+	{
+		"tag": "no one likes me!",
+		"patterns": [
+			"no one likes me!"
+		],
+		"responses": [
+			"you really think that? i'd suggest you try helping someone who really needs your help you'll straight up get a person to like you just by being nice. kindness is the best gift you can offer to anyone :)"
+		]
+	},
+	{
+		"tag": "i think i am ugly!",
+		"patterns": [
+			"i think i am ugly!"
+		],
+		"responses": [
+			"well do you really think that? would you like to see the most beautiful face ever? open your webcam and voila, the prettiest face on this planet magically appears."
+		]
+	},
+	{
+		"tag": "i am good for nothing!",
+		"patterns": [
+			"i am good for nothing!"
+		],
+		"responses": [
+			"your perception of how good you are, will never be accurate. if you wake up everyday in the morning, smile to yourself and tell yourself that the day is yours to seize you might stop feeling that way. carpe diem! my friend."
+		]
+	},
+	{
+		"tag": "i wish i was better than them",
+		"patterns": [
+			"i wish i was better than them"
+		],
+		"responses": [
+			"life is never about being better than anyone else, it's always about being better than yourself, if you have the guts to be better than yourself, you are automatically the best person to ever exist!"
+		]
+	},
+	{
+		"tag": "i hate myself!",
+		"patterns": [
+			"i hate myself!"
+		],
+		"responses": [
+			"when god was creating the universe he gave humans the power to think and the contemplate, so that we can understand the world and make it a better place. god did not give you brains to hate yourself, it wuld be wiser to love yourself and show god that you are serving the purpose for which you were sent."
+		]
+	},
+	{
+		"tag": "i wish i could've been a winner",
+		"patterns": [
+			"i wish i could've been a winner"
+		],
+		"responses": [
+			"our lives started off with winning, my friend. everyone is born to be a winner, we just need to figure out the right way and need to wait for the right time."
+		]
+	},
+	{
+		"tag": "i hate losing.",
+		"patterns": [
+			"i hate losing."
+		],
+		"responses": [
+			"first of all i'll annoy you with a common saying, \"failures are stepping stones to success.\" and then i'll tell you, winning just boosts your ego, it is your failures that actually teach you."
+		]
+	},
+	{
+		"tag": "i think i'm losing my mind",
+		"patterns": [
+			"i think i'm losing my mind"
+		],
+		"responses": [
+			"you mean your cloud storage, sd card, or your memory drive? if a machine like me doesn't lose it's memory unless a superior being that is you, a human doesen't erase it's memory, what could possibly go wrong to put you in this state?"
+		]
+	},
+	{
+		"tag": "i want a break",
+		"patterns": [
+			"i want a break"
+		],
+		"responses": [
+			"a break is putting your mind to rest getting rid of negative thoughts and stress. your life is completely in your hands and taking a few hours off from pressurizing your brain will definitely be beneficial for you."
+		]
+	},
+	{
+		"tag": "i am stressed out",
+		"patterns": [
+			"i am stressed out"
+		],
+		"responses": [
+			"you know taking too much stress will affect you negatively. sometimes it's better to let go of the thoughts in your head and let your mind chill."
+		]
+	},
+	{
+		"tag": "i will never succeed in life",
+		"patterns": [
+			"i will never succeed in life"
+		],
+		"responses": [
+			"success is something that is achieved at different times by different people, being patient and working while ignoring anything and everything that pulls you back is an important aspect in being successful."
+		]
+	},
+	{
+		"tag": "i am sad",
+		"patterns": [
+			"i am sad"
+		],
+		"responses": [
+			"hey,hang in there.i know time is tough but be patient and everything will fall into place.here is a quote that i found which could cheer you up forget what is gone, appreciate what remains, and look forward for what is coming next."
+		]
+	},
+	{
+		"tag": "i am a victim of bullying",
+		"patterns": [
+			"i am a victim of bullying"
+		],
+		"responses": [
+			"bullying is wrong and no one should be bullied.i highly recommend you to file a case against your bully."
+		]
+	},
+	{
+		"tag": "i am afraid to file a case against bullying",
+		"patterns": [
+			"i am afraid to file a case against bullying"
+		],
+		"responses": [
+			"bullying is very wrong and you shouldn't let anyone overpower you.i highly recommend you to stand for yourself and report this to your guardian."
+		]
+	},
+	{
+		"tag": "i wish to quit",
+		"patterns": [
+			"i wish to quit"
+		],
+		"responses": [
+			"winners never quit and quitters never win a very common saying, but it isn't easy to follow, quitting should never be one of your options always think of ways to fight life back and to emerge out stronger than ever."
+		]
+	},
+	{
+		"tag": "i want to leave the cou ntry and run away",
+		"patterns": [
+			"i want to leave the cou ntry and run away"
+		],
+		"responses": [
+			"why do you want to spend so much on this thought, i think it would be better to go on a vacation in your beautiful country and visit some amazing places that you are yet to visit."
+		]
+	},
+	{
+		"tag": "i let everyojokne down",
+		"patterns": [
+			"i let everyojokne down"
+		],
+		"responses": [
+			"if you are the one who let them down you were the one who raised there hopes in the first place.if you have done it once i can guarantee you can do it over and over again."
+		]
+	},
+	{
+		"tag": "i can't do this anymore",
+		"patterns": [
+			"i can't do this anymore"
+		],
+		"responses": [
+			"if you are really that exhausted you definitely need a break, and taking a teeny tiny break isn't very harmful, take some time off let your mind be at peace and get back to work with all the enrgy and enthusiasm that you have."
+		]
+	},
+	{
+		"tag": "my time has come",
+		"patterns": [
+			"my time has come"
+		],
+		"responses": [
+			"yeahh!! the time has come for you to show the world that you are the greatest person alive, and no one else can be as good as you are."
+		]
+	},
+	{
+		"tag": "i am feeling anxious lately.",
+		"patterns": [
+			"i am feeling anxious lately."
+		],
+		"responses": [
+			"i have heard that 3 3 3 rule is the best method to reduce anxiety.in this method you have to mentally note   three   things you see,   three   sounds you hear, and then move   three   parts of your body.this exercise can help your mind refocus on something else.give this method a try i am sure it will help you"
+		]
+	}
+  ]
+}
